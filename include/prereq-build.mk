@@ -146,7 +146,8 @@ $(eval $(call SetupHostCommand,svn,Please install the Subversion client, \
 
 $(eval $(call SetupHostCommand,git,Please install Git (git-core) >= 1.6.5, \
 #	git clone 2>&1 | grep -- --recursive))
-	git --exec-path | xargs -I % -- grep -q -- --recursive %/git-submodule))
+#	git --exec-path | xargs -I % -- grep -q -- --recursive %/git-submodule))
+	git –exec-path | xargs -I % – grep -q – –recursive %/git-submodule))
 
 $(eval $(call SetupHostCommand,file,Please install the 'file' package, \
 	file --version 2>&1 | grep file))
